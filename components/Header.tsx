@@ -1,0 +1,19 @@
+import { AudioLines } from "lucide-react";
+import { Button } from "./ui/button";
+
+export default function Header() {
+  return (
+    <header className=" py-4 w-full fixed top-0  backdrop-blur-md z-50 ">
+      <div className="flex justify-between items-center px-2 max-w-6xl mx-auto">
+        <div className="flex items-center relative gap-2">
+        <AudioLines className="size-5 text-fuchsia-500 " />
+        <div className="text-white text-xl font-semibold ">KLESIESCA</div>
+        
+        </div>
+        <div>
+          <Button className="text-white bg-purple-500">Book Now</Button>
+        </div>
+      </div>
+    </header>
+  );
+}
