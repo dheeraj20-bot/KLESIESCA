@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "KLESIESCA",
-  description: "KLESIESCA",
+  description: "KLESIESCA AI Caller for your Buisness",
 };
 
 export default function RootLayout({

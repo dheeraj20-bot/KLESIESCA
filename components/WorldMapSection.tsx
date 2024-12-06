@@ -4,10 +4,10 @@ import { motion } from "motion/react";
 
 export function WorldMapDemo() {
   return (
-    <div className=" py-20 rounded-t-[5rem] bg-black w-full relative  -mt-20 px-2 ">
+    <div className=" py-20  w-full relative  px-2 ">
 
       <div className="max-w-7xl  mx-auto text-center">
-        <p className="font-bold text-2xl md:text-5xl  text-white ">
+        <p className="font-bold text-3xl md:text-5xl  text-white ">
           Remote{" "}
           <span className=" bg-clip-text text-transparent bg-gradient-to-tr from-fuchsia-500 to-white">
             {"Connectivity".split("").map((word, idx) => (
