@@ -1,5 +1,4 @@
 import { AnimatedTestimonialsSection } from "@/components/animated-testimonialssection";
-import { BentoGridSecondDemo } from "@/components/bento-grid-section";
 import Header from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import Pricing from "@/components/Pricing";
@@ -13,7 +12,6 @@ export default function Home() {
       <Pricing />
       <WorldMapDemo />
       <AnimatedTestimonialsSection/>
-      {/* <BentoGridSecondDemo/> */}
     </div>
   );
 }
