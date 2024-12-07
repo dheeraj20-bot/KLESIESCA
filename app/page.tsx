@@ -11,7 +11,7 @@ export default function Home() {
       <HeroSection/>
       <Pricing />
       <WorldMapDemo />
-      <AnimatedTestimonialsSection/>
+      {/* <AnimatedTestimonialsSection/> */}
     </div>
   );
 }
