@@ -51,37 +51,28 @@ export function HeroSection() {
           <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
         </motion.button>
         <div className="flex flex-col z-10 items-center text-center">
-          <motion.h1
+          <h1
             className="text-5xl mb-4 md:text-7xl  font-semibold text-white text-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.2 }}
+           
           >
             Your Own Call Center, Ready to Serve You 24/7
-            {/* <WordRotate
-              className="bg-gradient-to-br text-transparent bg-clip-text inlin from-fuchsia-700 to-violet-500"
-              words={["Always","Quick","Steady"]}
-            /> */}
-          </motion.h1>
+            
+          </h1>
 
-          <motion.p
+          <p
             className="text-neutral-300 max-w-3xl mx-auto text-sm md:text-lg mb-8"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.2 }}
           >
             Say goodbye to unqualified leads! Let Kelsies handle your calls
             24/7, qualifying leads to your standards while you focus on growing
             your business. We always deliver
-          </motion.p>
+          </p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+          <div
+
           >
             <Link
-              href={"/"}
+              href={"https://api.leadconnectorhq.com/widget/booking/ToQCltj8A0MsFaKORtvJ"}
+              target="blank"
               className="bg-white  justify-center w-full flex items-center gap-3 px-2 py-4 
               rounded-xl font-medium text-lg mb-6 text-black hover:bg-gray-200 transition-colors"
             >
@@ -122,7 +113,7 @@ export function HeroSection() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           <HeroVideoDialog
             className="dark:hidden block"

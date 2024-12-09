@@ -17,7 +17,7 @@ export default function HowItWorks() {
             }}
             className="bg-gradient-to-br from-violet-300 to-violet-500 py-4 bg-clip-text text-center text-4xl md:text-5xl lg:text-7xl font-semibold tracking-tight text-transparent"
           >
-            How it works!
+            How it 
           </motion.h1>
         </div>
 
