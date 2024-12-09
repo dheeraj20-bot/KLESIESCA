@@ -3,17 +3,15 @@ import { CheckIcon } from "lucide-react";
 export default function Pricing() {
   return (
     <section className="py-24 lg:pb-32  relative overflow-hidden text-neutral-50">
-      <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#d946ef_100%)]">
-
-      </div>
       <div className="max-w-6xl   px-4 mx-auto">
         <div className="max-w-2xl mx-auto text-center mb-20">
           <h2 className=" md:mb-4 text-4xl md:text-6xl tracking-tighter">
             Pricing &amp; Plans
           </h2>
           <p className=" text-md md:text-xl tracking-tight">
-            Use and reuse tons of responsive sections to create the perfect
-            layout. Sections are ready.
+            Get access to cutting-edge AI features, exceptional support, and
+            flexible options to keep your business ahead of the curve. Start
+            with a free trial today and experience the difference!
           </p>
         </div>
         <div className="flex flex-wrap -m-6 *:mx-auto">
@@ -27,22 +25,23 @@ export default function Pricing() {
               ></div>
               <div className="p-12 border-b border-neutral-300 dark:border-neutral-600">
                 <div className="pr-9">
-                  <h4 className="mb-6 text-6xl tracking-tighter">Solo</h4>
+                  <h4 className="mb-6 text-6xl tracking-tighter">Basic Plan</h4>
                   <p className="mb-2 text-xl font-semibold tracking-tight">
-                    From $29/mo
+                    From €195/mo per assistant
                   </p>
                   <p className="tracking-tight">
-                    The ideal plan for larger businesses who require heavy
-                    usage.
+                    The ideal plan for small teams and startups starting to
+                    automate customer interactions.
                   </p>
                 </div>
               </div>
               <div className="p-12 pb-11">
                 <ul className="-m-1.5 mb-11">
-                  <FeatureItem>50 Users</FeatureItem>
-                  <FeatureItem>Unlimited Projects</FeatureItem>
-                  <FeatureItem>Project Schedule</FeatureItem>
-                  <FeatureItem>150+ Integrations</FeatureItem>
+                  <FeatureItem>500 minutes/month</FeatureItem>
+                  <FeatureItem>€0.99 per minute</FeatureItem>
+                  <FeatureItem>
+                    Full access to AI Voice Assistant features
+                  </FeatureItem>
                   <FeatureItem>Priority Email Support</FeatureItem>
                 </ul>
                 <PricingButton noCardRequired={true}>
@@ -52,14 +51,7 @@ export default function Pricing() {
             </div>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/3 p-6">
-            <div
-              className="p-px overflow-hidden rounded-2xl hover:-translate-y-2 transition duration-500 transform-gpu"
-              // style={{
-              //   backgroundImage: "url('/advanced-gradient.jpg')",
-              //   backgroundRepeat: "no-repeat",
-              //   backgroundSize: "cover",
-              // }}
-            >
+            <div className="p-px overflow-hidden rounded-2xl hover:-translate-y-2 transition duration-500 transform-gpu">
               <div className="h-full bg-white/5 backdrop-blur-lg relative z-10 rounded-2xl">
                 <div
                   className="p-12"
@@ -77,14 +69,14 @@ export default function Pricing() {
                   ></div>
                   <div className="pr-9">
                     <h4 className="mb-6 text-6xl text-white tracking-tighter">
-                      Startup
+                      Business Plan
                     </h4>
                     <p className="mb-2 text-xl text-white font-semibold tracking-tighter">
-                      From $99/mo
+                      From €195/mo
                     </p>
                     <p className="text-white tracking-tight">
-                      The ideal plan for larger businesses who require heavy
-                      usage.
+                      Perfect for medium-sized businesses needing more support
+                      and higher customer conversation volumes.
                     </p>
                   </div>
                 </div>
@@ -161,7 +153,6 @@ const PricingButton = ({
       >
         {children}
       </a>
-      
     </>
   );
 };

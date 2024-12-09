@@ -1,15 +1,14 @@
 "use client";
-import {WorldMap} from "@/components/ui/world-map";
+import { WorldMap } from "@/components/ui/world-map";
 import { motion } from "motion/react";
 
 export function WorldMapDemo() {
   return (
-    <div className=" py-20  w-full relative  px-2 ">
-
-      <div className="max-w-7xl  mx-auto text-center">
+    <div className=" py-10  w-full relative  px-2 ">
+      <div className="max-w-7xl mb-5  mx-auto text-center">
         <p className="font-bold text-3xl md:text-5xl  text-white ">
-          Remote{" "}
-          <span className=" bg-clip-text text-transparent bg-gradient-to-tr from-fuchsia-500 to-white">
+          Klesiescall{" "}
+          <span className="text-fuchsia-500">
             {"Connectivity".split("").map((word, idx) => (
               <motion.span
                 key={idx}
@@ -23,10 +22,10 @@ export function WorldMapDemo() {
             ))}
           </span>
         </p>
-        <p className="text-sm md:text-lg text-neutral-200 max-w-2xl mx-auto py-4">
-          Break free from traditional boundaries. Work from anywhere, at the
-          comfort of your own studio apartment. Perfect for Nomads and
-          Travellers.
+        <p className="text-sm md:text-lg text-neutral-300 max-w-xl mx-auto py-4">
+          Multilingual, reach international audience with national tarrifs. No
+          boundaries limitations. Klesiescall has more than 92 languages with
+          different accent.
         </p>
       </div>
       <WorldMap

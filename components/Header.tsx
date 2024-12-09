@@ -7,7 +7,7 @@ export default function Header() {
       <div className="flex justify-between items-center px-2 max-w-6xl mx-auto">
         <div className="flex items-center relative gap-2">
         <AudioLines className="size-5 text-fuchsia-500 " />
-        <div className="text-white text-xl font-semibold ">KLESIESCA</div>
+        <div className="text-white text-xl font-semibold ">KLESIESCALL</div>
         
         </div>
         <div>
