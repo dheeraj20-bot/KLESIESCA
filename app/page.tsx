@@ -12,14 +12,13 @@ export default function Home() {
       <WorldMapDemo />
       <HowItWorks />
       <Pricing />
-      <div className="h-screen py-10 flex flex-col items-center overflow-hidden  justify-center max-w-5xl mx-auto px-3">
-        <h2 className="text-6xl text-white font-semibold mb-6">Book a Call Now</h2>
+      <div className="h-screen py-5 flex flex-col items-center overflow-hidden  justify-center max-w-5xl mx-auto px-3">
+        <h2 className="text-4xl md:text-6xl text-white font-semibold mb-8">Book a Call  <span className="text-purple-500">Now</span></h2>
       <iframe
         src="https://api.leadconnectorhq.com/widget/booking/ToQCltj8A0MsFaKORtvJ"
-        width="600"
-        height="800"
         loading="lazy"
         style={{ border: 0 }}
+        className=" w-full px-3 h-full  md:w-1/2 "
         aria-hidden="false"
       ></iframe>
       </div>

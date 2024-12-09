@@ -5,7 +5,7 @@ export default function Pricing() {
     <section className="py-24 lg:pb-32  relative overflow-hidden text-neutral-50">
       <div className="max-w-6xl   px-4 mx-auto">
         <div className="max-w-2xl mx-auto text-center mb-20">
-          <h2 className=" md:mb-4 text-4xl md:text-6xl tracking-tighter">
+          <h2 className=" mb-4 text-4xl md:text-6xl tracking-tighter">
             Pricing &amp; Plans
           </h2>
           <p className=" text-md md:text-xl tracking-tight">
@@ -82,11 +82,12 @@ export default function Pricing() {
                 </div>
                 <div className="p-12 pb-11">
                   <ul className="-m-1.5 mb-11">
-                    <FeatureItem>50 Users</FeatureItem>
-                    <FeatureItem>Unlimited Projects</FeatureItem>
-                    <FeatureItem>Project Schedule</FeatureItem>
-                    <FeatureItem>150+ Integrations</FeatureItem>
-                    <FeatureItem>Priority Email Support</FeatureItem>
+                  <FeatureItem>501 and 1000 minutes/month</FeatureItem>
+                  <FeatureItem>€0.90 per minute</FeatureItem>
+                  <FeatureItem>
+                    Full access to AI Voice Assistant features
+                  </FeatureItem>
+                  <FeatureItem>Priority Email Support</FeatureItem>
                   </ul>
                   <PricingButton noCardRequired={true}>
                     Try 14 Days Free Trial
@@ -107,7 +108,7 @@ export default function Pricing() {
                 <div className="pr-9">
                   <h4 className="mb-6 text-6xl tracking-tighter">Custom</h4>
                   <p className="mb-2 text-xl font-semibold tracking-tighter">
-                    From $399/mo
+                    Let&apos;s Talk
                   </p>
                   <p className="tracking-tight">
                     We can customize a plan that suits the exact needs of your

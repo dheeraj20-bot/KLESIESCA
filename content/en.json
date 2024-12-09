@@ -1,0 +1,28 @@
+{
+    "heroSection": {
+      "buttonText": "Klesiescall Connect",
+      "mainHeading": "Your Own Call Center, Ready to Serve You 24/7",
+      "description": "Say goodbye to unqualified leads! Let Kelsies handle your calls 24/7, qualifying leads to your standards while you focus on growing your business. We always deliver.",
+      "cta": {
+        "text": "Claim Your Free Strategy Call Now",
+        "url": "https://api.leadconnectorhq.com/widget/booking/ToQCltj8A0MsFaKORtvJ"
+      },
+      "testimonials": {
+        "profileImages": [
+          "/av1.webp",
+          "/av2.webp",
+          "/av3.webp",
+          "/av4.webp"
+        ],
+        "additionalProfiles": "+96",
+        "rating": 5,
+        "testimonialText": "100+ Startup Founders Love KLESIESCALL"
+      },
+      "videoDialog": {
+        "videoSrc": "https://www.youtube.com/embed/6v5QtQ9Rtq4?si=qJYbRPwGeecmfsoZ",
+        "thumbnailSrc": "/hero.png",
+        "thumbnailAlt": "Hero Video"
+      }
+    }
+  }
+  

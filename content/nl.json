@@ -1,0 +1,28 @@
+{
+    "heroSection": {
+      "buttonText": "Klesiescall Connect",
+      "mainHeading": "Uw eigen callcenter, klaar om u 24/7 van dienst te zijn",
+      "description": "Zeg vaarwel tegen ongekwalificeerde leads! Laat Kelsies uw gesprekken 24/7 afhandelen, leads kwalificeren volgens uw normen terwijl u zich richt op de groei van uw bedrijf. Wij leveren altijd.",
+      "cta": {
+        "text": "Claim nu uw gratis strategiegesprek",
+        "url": "https://api.leadconnectorhq.com/widget/booking/ToQCltj8A0MsFaKORtvJ"
+      },
+      "testimonials": {
+        "profileImages": [
+          "/av1.webp",
+          "/av2.webp",
+          "/av3.webp",
+          "/av4.webp"
+        ],
+        "additionalProfiles": "+96",
+        "rating": 5,
+        "testimonialText": "100+ Startup-oprichters houden van KLESIESCALL"
+      },
+      "videoDialog": {
+        "videoSrc": "https://www.youtube.com/embed/6v5QtQ9Rtq4?si=qJYbRPwGeecmfsoZ",
+        "thumbnailSrc": "/hero.png",
+        "thumbnailAlt": "Hero-video"
+      }
+    }
+  }
+  
