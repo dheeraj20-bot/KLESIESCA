@@ -1,3 +1,4 @@
+import { FeaturesSection } from "@/components/feature-section";
 import Header from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import HowItWorks from "@/components/how-it-works";
@@ -9,8 +10,9 @@ export default function Home() {
     <div className=" ">
       <Header />
       <HeroSection />
-      <WorldMapDemo />
+      <FeaturesSection/>
       <HowItWorks />
+      <WorldMapDemo />
       <Pricing />
       <div className="h-screen py-5 flex flex-col items-center overflow-hidden  justify-center max-w-5xl mx-auto px-3">
         <h2 className="text-4xl md:text-6xl text-white font-semibold mb-8">Book a Call  <span className="text-purple-500">Now</span></h2>
@@ -18,7 +20,7 @@ export default function Home() {
         src="https://api.leadconnectorhq.com/widget/booking/ToQCltj8A0MsFaKORtvJ"
         loading="lazy"
         style={{ border: 0 }}
-        className=" w-full px-3 h-full  md:w-1/2 "
+        className=" w-full px-3 h-full  "
         aria-hidden="false"
       ></iframe>
       </div>
