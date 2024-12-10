@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "KLESIESCA",
+  title: "KLESIESCALL",
   description: "KLESIESCA AI Caller for your Buisness",
 };
 

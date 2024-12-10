@@ -71,7 +71,7 @@ export function HeroSection() {
             <Link
               href={cta.url}
               target="blank"
-              className="bg-white justify-center w-full flex items-center gap-3 px-2 py-4 rounded-xl font-medium text-lg mb-6 text-black hover:bg-gray-200 transition-colors"
+              className="flex-1 bg-white justify-center flex items-center gap-3 px-2 py-4 rounded-xl font-medium text-lg mb-6 text-black hover:bg-gray-200 transition-colors"
             >
               <AudioLines className="size-5 animate-pulse text-fuchsia-500" />
               {cta.text}
@@ -111,9 +111,7 @@ export function HeroSection() {
               </div>
             </div>
           </div>
-          <HeroVideo
-            videoSrc={videoDialog.videoSrc}
-          />
+          <HeroVideo videoSrc={videoDialog.videoSrc} />
         </div>
       </div>
     </main>

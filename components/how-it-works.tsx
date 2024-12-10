@@ -1,54 +1,59 @@
-"use client";
-
-import { Code, Plug, Smile } from "lucide-react"; // Import icons
+import { Code2, Plug, SmilePlus } from 'lucide-react'
+import { Card, CardContent } from "@/components/ui/card"
 
 export default function HowItWorks() {
   return (
-    <div className="relative py-24">
-      <div className="w-full mx-auto max-w-6xl px-4">
-        <div className="text-center mb-16">
-          <h1
-            className="bg-gradient-to-br from-fuchsia-500 to-violet-500 py-4 bg-clip-text text-center text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-transparent"
-          >
-            How It Works!
-          </h1>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {[
-            { title: "Customized System", icon: <Code size={48} /> },
-            { title: "Seamless Integration", icon: <Plug size={48} /> },
-            { title: "Happy Conversions", icon: <Smile size={48} /> },
-          ].map((step, index) => (
-            <div key={step.title} className="text-center relative">
-              {/* Large Numbers Positioned Behind the Text */}
-              {/* <div className="text-[100px] md:text-[160px] font-bold text-transparent bg-clip-text bg-gradient-to-b from-gray-500 via-gray-800 to-black absolute -top-16 left-1/2 transform -translate-x-1/2 -z-10">
-                {index + 1}
-              </div> */}
-
-              {/* Card Content */}
-              <div className="relative flex items-center justify-center flex-col z-10 bg-white/20 backdrop-blur-md p-6 md:p-8 rounded-xl shadow-lg">
-                {/* Icon */}
-                <div className="mb-4 text-center text-white">
-                  {step.icon}
-                </div>
-
-                <h3 className="text-2xl md:text-3xl lg:text-4xl text-white font-bold mb-4">
-                  {step.title}
-                </h3>
-                <p className="text-zinc-300 text-sm md:text-base lg:text-lg">
-                  {index === 0 &&
-                    "We design and build your AI-powered calling solution to meet your specific needs and requests."}
-                  {index === 1 &&
-                    "Our system integrates smoothly with your existing tools and processes, ensuring minimal disruption to your business."}
-                  {index === 2 &&
-                    "Start experiencing smarter calls, better lead qualification, and higher conversion rates—effortlessly."}
-                </p>
+    <div className="w-full min-h-screen flex flex-col items-center justify-center p-4 md:p-8 bg-black relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 via-black to-black opacity-50"></div>
+      <div className="max-w-7xl mx-auto w-full space-y-12 relative z-10">
+        <h2 className="text-4xl md:text-6xl font-bold text-center bg-gradient-to-r from-purple-400 to-purple-600 text-transparent bg-clip-text">
+          How It Works!
+        </h2>
+        <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+          <Card className="bg-zinc-900/30 border-zinc-800 backdrop-blur-sm hover:bg-zinc-900/50 transition-all duration-300 group">
+            <CardContent className="p-6 space-y-4">
+              <div className="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <Code2 className="w-6 h-6 text-purple-400" />
               </div>
-            </div>
-          ))}
+              <h3 className="text-2xl font-semibold text-white">
+                Customized System
+              </h3>
+              <p className="text-zinc-300 leading-relaxed">
+                We design and build your AI-powered calling solution to meet your specific needs and requests.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-zinc-900/30 border-zinc-800 backdrop-blur-sm hover:bg-zinc-900/50 transition-all duration-300 group">
+            <CardContent className="p-6 space-y-4">
+              <div className="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <Plug className="w-6 h-6 text-purple-400" />
+              </div>
+              <h3 className="text-2xl font-semibold text-white">
+                Seamless Integration
+              </h3>
+              <p className="text-zinc-300 leading-relaxed">
+                Our system integrates smoothly with your existing tools and processes, ensuring minimal disruption to your business.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-zinc-900/30 border-zinc-800 backdrop-blur-sm hover:bg-zinc-900/50 transition-all duration-300 group">
+            <CardContent className="p-6 space-y-4">
+              <div className="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <SmilePlus className="w-6 h-6 text-purple-400" />
+              </div>
+              <h3 className="text-2xl font-semibold text-white">
+                Happy Conversions
+              </h3>
+              <p className="text-zinc-300 leading-relaxed">
+                Start experiencing smarter calls, better lead qualification, and higher conversion rates—effortlessly.
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </div>
-  );
+  )
 }
+
