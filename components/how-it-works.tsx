@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Code, Plug, Smile } from "lucide-react"; // Import icons
 
 export default function HowItWorks() {
