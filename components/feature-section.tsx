@@ -66,16 +66,6 @@ const grid = [
       description:
         "Choose from a variety of voice profiles or create a custom voice that aligns with your brand identity.",
     },
-    {
-      title: "Context Retention",
-      description:
-        "Maintain conversation context across sessions for smooth and natural interactions.",
-    },
-    {
-      title: "Secure Data Handling",
-      description:
-        "Ensure user data privacy and security with end-to-end encryption and compliance with industry standards.",
-    },
   ];
   
 export const Grid = ({
