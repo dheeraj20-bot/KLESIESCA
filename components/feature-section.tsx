@@ -8,7 +8,7 @@ export function FeaturesSection() {
       <div className="grid grid-cols-1  px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-2 max-w-7xl mx-auto">
         {grid.map((feature) => (
           <div
-            key={feature.description}
+            key={feature.id}
             className="relative bg-gradient-to-b from-neutral-900 to-neutral-950  p-6 rounded-3xl overflow-hidden"
           >
             <Grid size={20} />
@@ -26,48 +26,56 @@ export function FeaturesSection() {
 }
 
 const grid = [
-    {
-      title: "Natural Language Understanding (NLU)",
-      description:
-        "Our AI voice agents are equipped with advanced NLU capabilities, enabling them to understand user intents and context with precision.",
-    },
-    {
-      title: "Multi-Channel Integration",
-      description:
-        "Seamlessly integrate with phone systems, messaging apps, and voice platforms like Alexa and Google Assistant.",
-    },
-    {
-      title: "Real-Time Voice-to-Text Conversion",
-      description:
-        "Instantly convert voice input into text with high accuracy for seamless interaction and processing.",
-    },
-    {
-      title: "Personalized Responses",
-      description:
-        "Deliver tailored responses based on user preferences and historical interactions to enhance customer experience.",
-    },
-    {
-      title: "Sentiment Analysis",
-      description:
-        "Analyze user emotions in real-time to adapt responses and provide empathetic support.",
-    },
-    {
-      title: "Multilingual Support",
-      description:
-        "Engage users in their preferred language with built-in multilingual capabilities to serve diverse audiences.",
-    },
-    {
-      title: "Continuous Learning",
-      description:
-        "Our AI agents improve over time through machine learning, adapting to user behavior and preferences.",
-    },
-    {
-      title: "Customizable Voice Profiles",
-      description:
-        "Choose from a variety of voice profiles or create a custom voice that aligns with your brand identity.",
-    },
-  ];
-  
+  { 
+    id: 1,
+    title: "Natuurlijke Taalbegrip (NLU)",
+    description:
+      "Onze AI-spraakagenten zijn uitgerust met geavanceerde NLU-mogelijkheden, waarmee ze gebruikersintenties en context nauwkeurig begrijpen.",
+  },
+  {
+    id: 2,
+    title: "Multi-Channel Integratie",
+    description:
+      "Integreer naadloos met telefoonsystemen, messaging-apps en spraakplatforms zoals Alexa en Google Assistant.",
+  },
+  {
+    id: 3,
+    title: "Real-Time Spraak-naar-Tekst Conversie",
+    description:
+      "Converteer spraakinput direct naar tekst met hoge nauwkeurigheid voor naadloze interactie en verwerking.",
+  },
+  {
+    id: 4,
+    title: "Gepersonaliseerde Antwoorden",
+    description:
+      "Lever op maat gemaakte antwoorden op basis van gebruikersvoorkeuren en historische interacties om de klantervaring te verbeteren.",
+  },
+  {
+    id: 5,
+    title: "Sentimentanalyse",
+    description:
+      "Analyseer de emoties van gebruikers in real-time om reacties aan te passen en empathische ondersteuning te bieden.",
+  },
+  {
+    id: 6,
+    title: "Meertalige Ondersteuning",
+    description:
+      "Betrek gebruikers in hun voorkeurstaal met ingebouwde meertalige mogelijkheden om diverse doelgroepen te bedienen.",
+  },
+  {
+    id: 7,
+    title: "Continue Leren",
+    description:
+      "Onze AI-agenten verbeteren in de loop van de tijd door machine learning, waardoor ze zich aanpassen aan gebruikersgedrag en voorkeuren.",
+  },
+  {
+    id: 8,
+    title: "Aanpasbare Stemprofielen",
+    description:
+      "Kies uit een verscheidenheid aan stemprofielen of maak een aangepast profiel dat overeenkomt met je merkidentiteit.",
+  },
+];
+
 export const Grid = ({
   pattern,
   size,
