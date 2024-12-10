@@ -22,7 +22,7 @@ export default function Home() {
         src="https://api.leadconnectorhq.com/widget/booking/ToQCltj8A0MsFaKORtvJ"
         loading="lazy"
         style={{ border: 0 }}
-        className=" w-full px-3 h-full  "
+        className=" w-full px-3 h-full"
         aria-hidden="false"
       ></iframe>
       </div>
