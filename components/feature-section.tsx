@@ -4,8 +4,8 @@ import { useId } from "react";
 export function FeaturesSection() {
   return (
     <div className="py-20 lg:py-40">
-        
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-2 max-w-7xl mx-auto">
+
+      <div className="grid grid-cols-1  px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-2 max-w-7xl mx-auto">
         {grid.map((feature) => (
           <div
             key={feature.description}
@@ -26,48 +26,58 @@ export function FeaturesSection() {
 }
 
 const grid = [
-  {
-    title: "HIPAA and SOC2 Compliant",
-    description:
-      "Our applications are HIPAA and SOC2 compliant, your data is safe with us, always.",
-  },
-  {
-    title: "Automated Social Media Posting",
-    description:
-      "Schedule and automate your social media posts across multiple platforms to save time and maintain a consistent online presence.",
-  },
-  {
-    title: "Advanced Analytics",
-    description:
-      "Gain insights into your social media performance with detailed analytics and reporting tools to measure engagement and ROI.",
-  },
-  {
-    title: "Content Calendar",
-    description:
-      "Plan and organize your social media content with an intuitive calendar view, ensuring you never miss a post.",
-  },
-  {
-    title: "Audience Targeting",
-    description:
-      "Reach the right audience with advanced targeting options, including demographics, interests, and behaviors.",
-  },
-  {
-    title: "Social Listening",
-    description:
-      "Monitor social media conversations and trends to stay informed about what your audience is saying and respond in real-time.",
-  },
-  {
-    title: "Customizable Templates",
-    description:
-      "Create stunning social media posts with our customizable templates, designed to fit your brand's unique style and voice.",
-  },
-  {
-    title: "Collaboration Tools",
-    description:
-      "Work seamlessly with your team using our collaboration tools, allowing you to assign tasks, share drafts, and provide feedback in real-time.",
-  },
-];
-
+    {
+      title: "Natural Language Understanding (NLU)",
+      description:
+        "Our AI voice agents are equipped with advanced NLU capabilities, enabling them to understand user intents and context with precision.",
+    },
+    {
+      title: "Multi-Channel Integration",
+      description:
+        "Seamlessly integrate with phone systems, messaging apps, and voice platforms like Alexa and Google Assistant.",
+    },
+    {
+      title: "Real-Time Voice-to-Text Conversion",
+      description:
+        "Instantly convert voice input into text with high accuracy for seamless interaction and processing.",
+    },
+    {
+      title: "Personalized Responses",
+      description:
+        "Deliver tailored responses based on user preferences and historical interactions to enhance customer experience.",
+    },
+    {
+      title: "Sentiment Analysis",
+      description:
+        "Analyze user emotions in real-time to adapt responses and provide empathetic support.",
+    },
+    {
+      title: "Multilingual Support",
+      description:
+        "Engage users in their preferred language with built-in multilingual capabilities to serve diverse audiences.",
+    },
+    {
+      title: "Continuous Learning",
+      description:
+        "Our AI agents improve over time through machine learning, adapting to user behavior and preferences.",
+    },
+    {
+      title: "Customizable Voice Profiles",
+      description:
+        "Choose from a variety of voice profiles or create a custom voice that aligns with your brand identity.",
+    },
+    {
+      title: "Context Retention",
+      description:
+        "Maintain conversation context across sessions for smooth and natural interactions.",
+    },
+    {
+      title: "Secure Data Handling",
+      description:
+        "Ensure user data privacy and security with end-to-end encryption and compliance with industry standards.",
+    },
+  ];
+  
 export const Grid = ({
   pattern,
   size,

@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import HowItWorks from "@/components/how-it-works";
 import Pricing from "@/components/Pricing";
+import Service from "@/components/service";
 import { WorldMapDemo } from "@/components/WorldMapSection";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <FeaturesSection/>
+      <Service/>
       <HowItWorks />
       <WorldMapDemo />
       <Pricing />
