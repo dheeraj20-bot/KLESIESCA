@@ -7,7 +7,7 @@ export default function HowItWorks() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 via-black to-black opacity-50"></div>
       <div className="max-w-7xl mx-auto w-full space-y-12 relative z-10">
         <h2 className="text-4xl md:text-6xl font-bold text-center bg-gradient-to-r from-purple-400 to-purple-600 text-transparent bg-clip-text">
-          How It Works!
+          Hoe Het Werkt!
         </h2>
         <div className="grid md:grid-cols-3 gap-6 md:gap-8">
           <Card className="bg-zinc-900/30 border-zinc-800 backdrop-blur-sm hover:bg-zinc-900/50 transition-all duration-300 group">
@@ -16,10 +16,10 @@ export default function HowItWorks() {
                 <Code2 className="w-6 h-6 text-purple-400" />
               </div>
               <h3 className="text-2xl font-semibold text-white">
-                Customized System
+                Aangepast Systeem
               </h3>
               <p className="text-zinc-300 leading-relaxed">
-                We design and build your AI-powered calling solution to meet your specific needs and requests.
+                We ontwerpen en bouwen uw AI-gestuurde beloplossing om aan uw specifieke behoeften en wensen te voldoen.
               </p>
             </CardContent>
           </Card>
@@ -30,10 +30,10 @@ export default function HowItWorks() {
                 <Plug className="w-6 h-6 text-purple-400" />
               </div>
               <h3 className="text-2xl font-semibold text-white">
-                Seamless Integration
+                Naadloze Integratie
               </h3>
               <p className="text-zinc-300 leading-relaxed">
-                Our system integrates smoothly with your existing tools and processes, ensuring minimal disruption to your business.
+                Ons systeem integreert soepel met uw bestaande tools en processen, zodat uw bedrijf minimaal wordt verstoord.
               </p>
             </CardContent>
           </Card>
@@ -44,10 +44,10 @@ export default function HowItWorks() {
                 <SmilePlus className="w-6 h-6 text-purple-400" />
               </div>
               <h3 className="text-2xl font-semibold text-white">
-                Happy Conversions
+                Tevreden Conversies
               </h3>
               <p className="text-zinc-300 leading-relaxed">
-                Start experiencing smarter calls, better lead qualification, and higher conversion rates—effortlessly.
+                Begin met het ervaren van slimmere gesprekken, betere leadkwalificatie en hogere conversieratio's—moeiteloos.
               </p>
             </CardContent>
           </Card>
@@ -56,4 +56,3 @@ export default function HowItWorks() {
     </div>
   )
 }
-
