@@ -3,8 +3,11 @@ import { useId } from "react";
 
 export function FeaturesSection() {
   return (
-    <div className="py-20 lg:py-40">
-
+    <div className="py-20  relative">
+      <div className="absolute -z-10 inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 via-black to-black opacity-50"></div>
+      <h2 className="text-4xl text-white mb-10 md:text-6xl font-bold text-center">
+        Geavanceerde  <span className=" bg-gradient-to-r from-purple-400 to-purple-600 text-transparent bg-clip-text">AI-functionaliteiten</span>
+      </h2>
       <div className="grid grid-cols-1  px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-2 max-w-7xl mx-auto">
         {grid.map((feature) => (
           <div
@@ -26,7 +29,7 @@ export function FeaturesSection() {
 }
 
 const grid = [
-  { 
+  {
     id: 1,
     title: "Natuurlijke Taalbegrip (NLU)",
     description:
