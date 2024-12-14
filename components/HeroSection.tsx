@@ -8,6 +8,7 @@ import Link from "next/link";
 import content from "@/content/nl.json";
 import { HeroVideo } from "./ui/hero-video";
 import { Button } from "./ui/button";
+import { WordRotate } from "./ui/word-rotate";
 
 const { heroSection } = content;
 
@@ -32,7 +33,7 @@ export function HeroSection() {
       />
       <div className="absolute inset-0 -z-10 top-0 px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#d946ef_100%)]"></div>
 
-      <div className="max-w-5xl px-3 mx-auto flex flex-col items-center py-40 h-full w-full">
+      <div className="max-w-5xl px-2 md:px-5 mx-auto flex flex-col items-center py-40 h-full w-full">
         <motion.button
           className="bg-slate-800 mb-6 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6 text-white inline-block"
           whileHover={{ scale: 1.05 }}
@@ -62,8 +63,8 @@ export function HeroSection() {
           <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
         </motion.button>
         <div className="flex flex-col z-10 items-center text-center">
-          <h1 className="text-5xl mb-4 md:text-7xl font-semibold text-white text-center">
-            {mainHeading}
+          <h1 className="text-4xl mb-4 md:text-7xl font-semibold text-white text-center">
+            {mainHeading} <WordRotate  words={["ondersteuning bieden 24/7", " afspraken inplannen","verkopen stimuleren","potentiële klanten koud bellen","kosten reduceren","menselijk klinken","je bedrijf stimuleren","prospects omzetten"]} />
           </h1>
           <p className="text-neutral-300 max-w-3xl mx-auto text-sm md:text-xl mb-8">
             {description}
