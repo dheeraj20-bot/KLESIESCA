@@ -7,6 +7,7 @@ import Link from "next/link";
 // Import JSON content
 import content from "@/content/nl.json";
 import { HeroVideo } from "./ui/hero-video";
+import { Button } from "./ui/button";
 
 const { heroSection } = content;
 
@@ -64,18 +65,22 @@ export function HeroSection() {
           <h1 className="text-5xl mb-4 md:text-7xl font-semibold text-white text-center">
             {mainHeading}
           </h1>
-          <p className="text-neutral-300 max-w-3xl mx-auto text-sm md:text-lg mb-8">
+          <p className="text-neutral-300 max-w-3xl mx-auto text-sm md:text-xl mb-8">
             {description}
           </p>
-          <div>
-            <Link
+          <Link
               href={cta.url}
               target="blank"
-              className="flex-1 bg-white justify-center flex items-center gap-3 px-2 py-4 rounded-xl font-medium text-lg mb-6 text-black hover:bg-gray-200 transition-colors"
+              className=" mb-8"
             >
+              <Button className="px-3 py-5  bg-white text-black hover:bg-violet-500 transition-colors  ">
               <AudioLines className="size-5 animate-pulse text-fuchsia-500" />
               {cta.text}
+              </Button>
+              
             </Link>
+          <div> 
+           
             <div>
               <div className="flex mb-5 flex-col-reverse md:flex-row items-center gap-4">
                 <div className="flex -space-x-4">

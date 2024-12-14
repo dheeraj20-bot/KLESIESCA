@@ -6,7 +6,7 @@ export function FeaturesSection() {
     <div className="py-20  relative">
       <div className="absolute -z-10 inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 via-black to-black opacity-50"></div>
       <h2 className="text-4xl text-white mb-10 md:text-6xl font-bold text-center">
-        Geavanceerde  <span className=" bg-gradient-to-r from-purple-400 to-purple-600 text-transparent bg-clip-text">AI-functionaliteiten</span>
+      Waarom kiezen   <span className=" bg-gradient-to-r from-purple-400 to-purple-600 text-transparent bg-clip-text">voor ons</span>
       </h2>
       <div className="grid grid-cols-1  px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-2 max-w-7xl mx-auto">
         {grid.map((feature) => (
@@ -33,49 +33,49 @@ const grid = [
     id: 1,
     title: "Natuurlijke Taalbegrip (NLU)",
     description:
-      "Onze AI-spraakagenten zijn uitgerust met geavanceerde NLU-mogelijkheden, waarmee ze gebruikersintenties en context nauwkeurig begrijpen.",
+    "Onze AI-spraakagenten begrijpen intenties en context perfect dankzij geavanceerd natuurlijk taalbegrip. Ze klinken niet alleen menselijk, maar kunnen zelfs pauzeren, ‘uhmmm’ zeggen en nadenken, precies zoals een echte persoon. Deze subtiele nuances maken interacties natuurlijker en geloofwaardiger, zodat klanten het verschil niet merken"
   },
   {
     id: 2,
     title: "Multi-Channel Integratie",
     description:
-      "Integreer naadloos met telefoonsystemen, messaging-apps en spraakplatforms zoals Alexa en Google Assistant.",
+    "Onze AI integreert moeiteloos met jouw telefoonsystemen, CRM-tools, en communicatieplatforms zoals WhatsApp, SMS en e-mail. Hierdoor kun je al je klantgesprekken vanuit één centraal systeem beheren, zonder gedoe met losse systemen of handmatige updates."
   },
   {
     id: 3,
     title: "Real-Time Spraak-naar-Tekst Conversie",
     description:
-      "Converteer spraakinput direct naar tekst met hoge nauwkeurigheid voor naadloze interactie en verwerking.",
+    "Converteer klantgesprekken in een oogwenk naar tekst, met ongeëvenaarde nauwkeurigheid. Dit maakt niet alleen directe verwerking mogelijk, maar zorgt er ook voor dat je een duidelijke, doorzoekbare gespreksgeschiedenis hebt voor toekomstige inzichten en verbeteringen."
   },
   {
     id: 4,
     title: "Gepersonaliseerde Antwoorden",
     description:
-      "Lever op maat gemaakte antwoorden op basis van gebruikersvoorkeuren en historische interacties om de klantervaring te verbeteren.",
+    "Onze AI levert hyperpersoonlijke antwoorden door gebruikersvoorkeuren en eerdere interacties te analyseren. Dit zorgt voor gesprekken die naadloos aansluiten bij de behoeften van de klant, alsof ze met een bekende spreken."
   },
   {
     id: 5,
     title: "Sentimentanalyse",
     description:
-      "Analyseer de emoties van gebruikers in real-time om reacties aan te passen en empathische ondersteuning te bieden.",
+    "Met real-time sentimentanalyse herkent onze AI direct de emotie van de klant, van frustratie tot blijdschap. Hierdoor kun je je reacties aanpassen en empathie tonen, wat leidt tot een positievere klantervaring en betere resultaten."
   },
   {
     id: 6,
     title: "Meertalige Ondersteuning",
     description:
-      "Betrek gebruikers in hun voorkeurstaal met ingebouwde meertalige mogelijkheden om diverse doelgroepen te bedienen.",
+    "Bereik klanten over de hele wereld in hun eigen taal met ondersteuning voor meer dan 92 talen en regionale accenten. Onze AI zorgt ervoor dat elke interactie soepel en natuurlijk verloopt, ongeacht waar je klant zich bevindt"
   },
   {
     id: 7,
     title: "Continue Leren",
     description:
-      "Onze AI-agenten verbeteren in de loop van de tijd door machine learning, waardoor ze zich aanpassen aan gebruikersgedrag en voorkeuren.",
+    "Onze AI leert van elke interactie en past zich constant aan veranderende klantgedragingen aan. Dit betekent dat jouw systeem slimmer en efficiënter wordt naarmate het vaker wordt gebruikt, zonder dat je extra moeite hoeft te doen"
   },
   {
     id: 8,
     title: "Aanpasbare Stemprofielen",
     description:
-      "Kies uit een verscheidenheid aan stemprofielen of maak een aangepast profiel dat overeenkomt met je merkidentiteit.",
+    "Geef je merk een menselijke touch door een stemprofiel te kiezen dat perfect past bij jouw identiteit. Of creëer een unieke stem die jouw klanten direct herkennen en vertrouwen, zoals die van jezelf bijvoorbeeld."
   },
 ];
 
