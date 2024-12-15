@@ -7,6 +7,7 @@ import { useState } from "react";
 // import { Switch } from "@/components/ui/switch";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 
 type Interval = "month" | "year";
 
@@ -79,12 +80,15 @@ export function Pricing() {
   const [isLoading, setIsLoading] = useState(false);
   
   const [id, setId] = useState<string | null>(null);
+  const router = useRouter(); // get the next/navigation router
+
 
   const onSubscribeClick = async (priceId: string) => {
     setIsLoading(true);
     setId(priceId);
     await new Promise((resolve) => setTimeout(resolve, 1000)); // Simulate a delay
-    
+    router.push('https://api.leadconnectorhq.com/widget/booking/uZDr1RQLbK7hlir0bcy6'); // Redirect after the delay      
+
     setIsLoading(false);
   };
 
