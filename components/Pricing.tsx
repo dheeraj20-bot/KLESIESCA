@@ -16,64 +16,60 @@ export function toHumanPrice(price: number, decimals: number = 2) {
 const demoPrices = [
   {
     id: "price_1",
-    name: "Basic",
+    name: "Starter",
     description: "A basic plan for startups and individual users",
     features: [
-      "AI-powered analytics",
-      "Basic support",
-      "5 projects limit",
-      "Access to basic AI tools",
+      "Kosten per minuut: €0,40",
+      "Basis ondersteuning",
+      "vaste voice assistant"
     ],
-    monthlyPrice: 1000,
+    monthlyPrice: 97    ,
     yearlyPrice: 10000,
     isMostPopular: false,
   },
   {
     id: "price_2",
-    name: "Premium",
+    name: "Growth",
     description: "A premium plan for growing businesses",
     features: [
-      "Advanced AI insights",
-      "Priority support",
-      "Unlimited projects",
-      "Access to all AI tools",
-      "Custom integrations",
+      "Kosten per minuut: €0,25",
+      "3 gelijktijdige lijnen",
+      "Prioritaire ondersteuning",
+      "Geavanceerde data-analyse",
     ],
-    monthlyPrice: 2000,
+    monthlyPrice: 697,
     yearlyPrice: 20000,
     isMostPopular: true,
   },
   {
     id: "price_5",
-    name: "Enterprise",
+    name: "Business",
     description:
       "An enterprise plan with advanced features for large organizations",
     features: [
-      "Custom AI solutions",
-      "24/7 dedicated support",
-      "Unlimited projects",
-      "Access to all AI tools",
-      "Custom integrations",
-      "Data security and compliance",
+      "Kosten per minuut: €0,20",
+      "10 gelijktijdige lijnen",
+      "1.500 gratis belminuten per maand",
+      "Exclusieve ondersteuning",
+      "Gepersonaliseerde voice assistants"
     ],
-    monthlyPrice: 5000,
+    monthlyPrice: 1497,
     yearlyPrice: 50000,
     isMostPopular: false,
   },
   {
     id: "price_6",
-    name: "Ultimate",
+    name: "Enterprise",
     description: "The ultimate plan with all features for industry leaders",
     features: [
-      "Bespoke AI development",
-      "White-glove support",
-      "Unlimited projects",
-      "Priority access to new AI tools",
-      "Custom integrations",
-      "Highest data security and compliance",
+      "Maatwerkoplossingen voor grootschalige bedrijven",
+      "Geavanceerde beveiliging en compliance",
+      "Toegewijde accountmanager",
+      "Gepersonaliseerde voice assistants en uitgebreide analyses",
     ],
-    monthlyPrice: 8000,
+    monthlyPrice: 3000,
     yearlyPrice: 80000,
+    enterprise:true,
     isMostPopular: false,
   },
 ];
@@ -81,13 +77,14 @@ const demoPrices = [
 export function Pricing() {
   const [interval, setInterval] = useState<Interval>("month");
   const [isLoading, setIsLoading] = useState(false);
+  
   const [id, setId] = useState<string | null>(null);
 
   const onSubscribeClick = async (priceId: string) => {
     setIsLoading(true);
     setId(priceId);
     await new Promise((resolve) => setTimeout(resolve, 1000)); // Simulate a delay
-
+    
     setIsLoading(false);
   };
 
@@ -146,15 +143,18 @@ export function Pricing() {
                 }}
                 className="flex flex-row gap-1"
               >
-                <span className="text-4xl font-bold text-white">
-                  $
-                  {interval === "year"
-                    ? toHumanPrice(price.yearlyPrice, 0)
-                    : toHumanPrice(price.monthlyPrice, 0)}
-                  <span className="text-xs"> /{interval}</span>
-                </span>
+                {
+                  price.enterprise ? (<div className="text-4xl  font-bold text-white ">
+                     <p>Neem contact met ons op</p>
+                  </div>):( <span className="text-4xl font-bold text-white">
+                    €
+                  <span>{price.monthlyPrice}</span>
+                 <span className="text-xs"> /month</span>
+               </span>)
+                }
+               
               </motion.div>
-
+       
               <Button
                 className={cn(
                   "group relative w-full gap-2  bg-violet-500 overflow-hidden text-lg font-semibold tracking-tighter",
@@ -165,10 +165,10 @@ export function Pricing() {
               >
                 <span className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform-gpu  opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-96 bg-violet-500" />
                 {(!isLoading || (isLoading && id !== price.id)) && (
-                  <p>Subscribe</p>
+                  <p>Boek een gesprek</p>
                 )}
 
-                {isLoading && id === price.id && <p>Subscribing</p>}
+                {isLoading && id === price.id && <p>Loading...</p>}
                 {isLoading && id === price.id && (
                   <Loader className="mr-2 size-4 animate-spin" />
                 )}

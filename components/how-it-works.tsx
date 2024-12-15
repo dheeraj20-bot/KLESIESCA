@@ -1,4 +1,4 @@
-import { Code2, Plug, SmilePlus } from "lucide-react";
+import { Code2, Plug, SmilePlus, TreePalm } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function HowItWorks() {
@@ -58,14 +58,15 @@ export default function HowItWorks() {
           <Card className="bg-zinc-900/30 border-zinc-800 backdrop-blur-sm hover:bg-zinc-900/50 transition-all duration-300 group">
             <CardContent className="p-6 space-y-4">
               <div className="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <SmilePlus className="w-6 h-6 text-purple-400" />
+                <TreePalm className="w-6 h-6 text-purple-400" />
               </div>
               <h3 className="text-2xl font-semibold text-white">
-                Tevreden Conversies
+              Optimaliseren en Groeien
               </h3>
               <p className="text-zinc-300 leading-relaxed">
-                Begin met het ervaren van slimmere gesprekken, betere
-                leadkwalificatie en hogere conversieratio's—moeiteloos.
+              Na de lancering blijft onze AI leren en zich aanpassen.
+              Je krijgt toegang tot waardevolle data en inzichten waarmee
+              je je strategie kunt optimaliseren en je bedrijf verder kunt laten groeien.
               </p>
             </CardContent>
           </Card>

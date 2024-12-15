@@ -37,9 +37,10 @@ export function BentoSection() {
         className="lg:rounded-tr-4xl inset-0 bg-gradient-to-t to-35%  transition-colors duration-200 from-violet-500/20 lg:col-span-3 "
       />
       <BentoCard
-        eyebrow="Speed"
-        title="Built for power users"
-        description="It’s never been faster to cold email your entire contact list using our streamlined keyboard shortcuts."
+        eyebrow="Snelheid"
+        title="Directe Reacties, 24/7"
+        description=
+        "Onze AI-spraakassistent staat altijd klaar om klanten snel en nauwkeurig te helpen."
         graphic={
           <div className="flex size-full pl-10 pt-10">
             <Keyboard highlighted={["LeftCommand", "C", "S"]} />
@@ -48,16 +49,18 @@ export function BentoSection() {
         className="lg:rounded-bl-4xl lg:col-span-2"
       />
       <BentoCard
-        eyebrow="Source"
-        title="Get the furthest reach"
-        description="Bypass those inconvenient privacy laws to source leads from the most unexpected places."
+        eyebrow="Naadloze Integratie"
+        title="Jouw AI, Jouw Manier"
+        description=
+        "Integreer onze AI-spraakassistent moeiteloos met je bestaande CRM en andere systemen."
         graphic={<LogoCluster />}
         className="lg:col-span-2"
       />
       <BentoCard
-        eyebrow="Limitless"
-        title="Sell globally"
-        description="Radiant helps you sell in locations currently under international embargo."
+        eyebrow="Grenzeloos"
+        title="Globaal, Lokaal, Verbonden"
+        description=
+        "Onze AI-spraakassistent ondersteunt meerdere talen, waardoor je wereldwijd kunt communiceren."
         graphic={<Map />}
         className="max-lg:rounded-b-4xl lg:rounded-br-4xl lg:col-span-2"
       />
