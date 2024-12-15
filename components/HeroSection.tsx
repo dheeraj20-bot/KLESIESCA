@@ -9,6 +9,7 @@ import content from "@/content/nl.json";
 import { HeroVideo } from "./ui/hero-video";
 import { Button } from "./ui/button";
 import { WordRotate } from "./ui/word-rotate";
+import { SpotlightButton } from "./ui/Spotlightbutton";
 
 const { heroSection } = content;
 
@@ -33,7 +34,7 @@ export function HeroSection() {
       />
       <div className="absolute inset-0 -z-10 top-0 px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#d946ef_100%)]"></div>
 
-      <div className="max-w-5xl px-2 md:px-5 mx-auto flex flex-col items-center py-40 h-full w-full">
+      <div className="max-w-5xl px-1 md:px-5 mx-auto flex flex-col items-center py-40 h-full w-full">
         <motion.button
           className="bg-slate-800 mb-6 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6 text-white inline-block"
           whileHover={{ scale: 1.05 }}
@@ -64,22 +65,12 @@ export function HeroSection() {
         </motion.button>
         <div className="flex flex-col z-10 items-center text-center">
           <h1 className="text-4xl mb-4 md:text-7xl font-semibold text-white text-center">
-            {mainHeading} <WordRotate  words={["ondersteuning bieden 24/7", " afspraken inplannen","verkopen stimuleren","potentiële klanten koud bellen","kosten reduceren","menselijk klinken","je bedrijf stimuleren","prospects omzetten"]} />
+            {mainHeading} <WordRotate  words={["ondersteuning bieden 24/7", " afspraken inplannen","potentiële klanten koud bellen","kosten reduceren","menselijk klinken","je bedrijf stimuleren","prospects omzetten"]} />
           </h1>
           <p className="text-neutral-300 max-w-3xl mx-auto text-sm md:text-xl mb-8">
             {description}
           </p>
-          <Link
-              href={cta.url}
-              target="blank"
-              className=" mb-8"
-            >
-              <Button className="px-3 py-5  bg-white text-black hover:bg-violet-500 transition-colors  ">
-              <AudioLines className="size-5 animate-pulse text-fuchsia-500" />
-              {cta.text}
-              </Button>
-              
-            </Link>
+          <SpotlightButton/>
           <div> 
            
             <div>

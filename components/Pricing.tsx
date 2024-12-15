@@ -1,159 +1,197 @@
-import { CheckIcon } from "lucide-react";
+"use client";
 
-export default function Pricing() {
+import { CheckIcon } from "lucide-react";
+import { motion } from "framer-motion";
+import { Loader } from "lucide-react";
+import { useState } from "react";
+// import { Switch } from "@/components/ui/switch";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+
+type Interval = "month" | "year";
+
+export function toHumanPrice(price: number, decimals: number = 2) {
+  return Number(price / 100).toFixed(decimals);
+}
+const demoPrices = [
+  {
+    id: "price_1",
+    name: "Basic",
+    description: "A basic plan for startups and individual users",
+    features: [
+      "AI-powered analytics",
+      "Basic support",
+      "5 projects limit",
+      "Access to basic AI tools",
+    ],
+    monthlyPrice: 1000,
+    yearlyPrice: 10000,
+    isMostPopular: false,
+  },
+  {
+    id: "price_2",
+    name: "Premium",
+    description: "A premium plan for growing businesses",
+    features: [
+      "Advanced AI insights",
+      "Priority support",
+      "Unlimited projects",
+      "Access to all AI tools",
+      "Custom integrations",
+    ],
+    monthlyPrice: 2000,
+    yearlyPrice: 20000,
+    isMostPopular: true,
+  },
+  {
+    id: "price_5",
+    name: "Enterprise",
+    description:
+      "An enterprise plan with advanced features for large organizations",
+    features: [
+      "Custom AI solutions",
+      "24/7 dedicated support",
+      "Unlimited projects",
+      "Access to all AI tools",
+      "Custom integrations",
+      "Data security and compliance",
+    ],
+    monthlyPrice: 5000,
+    yearlyPrice: 50000,
+    isMostPopular: false,
+  },
+  {
+    id: "price_6",
+    name: "Ultimate",
+    description: "The ultimate plan with all features for industry leaders",
+    features: [
+      "Bespoke AI development",
+      "White-glove support",
+      "Unlimited projects",
+      "Priority access to new AI tools",
+      "Custom integrations",
+      "Highest data security and compliance",
+    ],
+    monthlyPrice: 8000,
+    yearlyPrice: 80000,
+    isMostPopular: false,
+  },
+];
+
+export function Pricing() {
+  const [interval, setInterval] = useState<Interval>("month");
+  const [isLoading, setIsLoading] = useState(false);
+  const [id, setId] = useState<string | null>(null);
+
+  const onSubscribeClick = async (priceId: string) => {
+    setIsLoading(true);
+    setId(priceId);
+    await new Promise((resolve) => setTimeout(resolve, 1000)); // Simulate a delay
+
+    setIsLoading(false);
+  };
+
   return (
-    <section className="py-24 lg:pb-32  relative overflow-hidden text-neutral-50">
-      <div className="max-w-6xl   px-4 mx-auto">
-        <div className="max-w-2xl mx-auto text-center mb-20">
-          <h2 className=" mb-4 text-4xl md:text-6xl tracking-tighter">
-            Pricing &amp; Plans
-          </h2>
-          <p className=" text-md md:text-xl tracking-tight">
-            Get access to cutting-edge AI features, exceptional support, and
-            flexible options to keep your business ahead of the curve. Start
-            with a free trial today and experience the difference!
-          </p>
+    <section id="pricing" className="bg-gradient-to-bl from-violet-500 via-black to-black">
+      <div className="mx-auto flex max-w-screen-xl  flex-col gap-8 px-4 py-14 md:px-8">
+        <div className="mx-auto max-w-5xl text-center">
+          <h4 className=" text-4xl sm:text-7xl font-bold tracking-tight text-white">
+            Pricing
+          </h4>
         </div>
-        <div className="flex flex-wrap -m-6 *:mx-auto">
-          <div className="w-full md:w-1/2 lg:w-1/3 p-6">
-            <div className="h-full bg-white/5 backdrop-blur-lg z-10  border relative border-slate-600 rounded-2xl transform-gpu hover:-translate-y-2 transition duration-500 ">
-              <div
-                className=" absolute inset-0  -z-10 opacity-10 "
-                style={{
-                  backgroundImage: "url('/grain.jpg')",
-                }}
-              ></div>
-              <div className="p-12 border-b border-neutral-300 dark:border-neutral-600">
-                <div className="pr-9">
-                  <h4 className="mb-6 text-6xl tracking-tighter">Basic Plan</h4>
-                  <p className="mb-2 text-xl font-semibold tracking-tight">
-                    From €195/mo per assistant
-                  </p>
-                  <p className="tracking-tight">
-                    The ideal plan for small teams and startups starting to
-                    automate customer interactions.
+
+       
+
+        <div className="mx-auto grid w-full flex-col justify-center gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {demoPrices.map((price, idx) => (
+            <div
+              key={price.id}
+              className={cn(
+                "relative flex max-w-[400px] flex-col gap-8 overflow-hidden bg-zinc-900/30  backdrop-blur-sm hover:bg-zinc-900/50 transition-all duration-300 rounded-2xl border border-neutral-400 p-4 text-white",
+                {
+                  "border-2 ":
+                    price.isMostPopular,
+                },
+              )}
+            >
+              <div className="flex items-center">
+                <div className="ml-4">
+                  <h2 className="text-base font-semibold leading-7">
+                    {price.name}
+                  </h2>
+                  <p className="h-12 text-sm leading-5 text-white">
+                    {price.description}
                   </p>
                 </div>
               </div>
-              <div className="p-12 pb-11">
-                <ul className="-m-1.5 mb-11">
-                  <FeatureItem>500 minutes/month</FeatureItem>
-                  <FeatureItem>€0.99 per minute</FeatureItem>
-                  <FeatureItem>
-                    Full access to AI Voice Assistant features
-                  </FeatureItem>
-                  <FeatureItem>Priority Email Support</FeatureItem>
+
+              <motion.div
+                key={`${price.id}-${interval}`}
+                initial="initial"
+                animate="animate"
+                variants={{
+                  initial: {
+                    opacity: 0,
+                    y: 12,
+                  },
+                  animate: {
+                    opacity: 1,
+                    y: 0,
+                  },
+                }}
+                transition={{
+                  duration: 0.4,
+                  delay: 0.1 + idx * 0.05,
+                  ease: [0.21, 0.47, 0.32, 0.98],
+                }}
+                className="flex flex-row gap-1"
+              >
+                <span className="text-4xl font-bold text-white">
+                  $
+                  {interval === "year"
+                    ? toHumanPrice(price.yearlyPrice, 0)
+                    : toHumanPrice(price.monthlyPrice, 0)}
+                  <span className="text-xs"> /{interval}</span>
+                </span>
+              </motion.div>
+
+              <Button
+                className={cn(
+                  "group relative w-full gap-2  bg-violet-500 overflow-hidden text-lg font-semibold tracking-tighter",
+                  "transform-gpu ring-offset-current transition-all duration-300 ease-out hover:ring-2 hover:ring-primary hover:ring-offset-2",
+                )}
+                disabled={isLoading}
+                onClick={() => void onSubscribeClick(price.id)}
+              >
+                <span className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform-gpu  opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-96 bg-violet-500" />
+                {(!isLoading || (isLoading && id !== price.id)) && (
+                  <p>Subscribe</p>
+                )}
+
+                {isLoading && id === price.id && <p>Subscribing</p>}
+                {isLoading && id === price.id && (
+                  <Loader className="mr-2 size-4 animate-spin" />
+                )}
+              </Button>
+
+              <hr className="m-0 h-px w-full border-none bg-gradient-to-r from-neutral-200/0 via-neutral-500/30 to-neutral-200/0" />
+              {price.features && price.features.length > 0 && (
+                <ul className="flex flex-col gap-2 font-normal">
+                  {price.features.map((feature: any, idx: any) => (
+                    <li
+                      key={idx}
+                      className="flex items-center gap-3 text-xs font-medium text-white"
+                    >
+                      <CheckIcon className="size-5 shrink-0 rounded-full bg-green-400 p-[2px] text-white" />
+                      <span className="flex">{feature}</span>
+                    </li>
+                  ))}
                 </ul>
-                <PricingButton noCardRequired={true}>
-                  Try 14 Days Free Trial
-                </PricingButton>
-              </div>
+              )}
             </div>
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/3 p-6">
-            <div className="p-px overflow-hidden rounded-2xl hover:-translate-y-2 transition duration-500 transform-gpu">
-              <div className="h-full bg-white/5 backdrop-blur-lg relative z-10 rounded-2xl">
-                <div
-                  className="p-12"
-                  style={{
-                    backgroundImage: "url('/advanced-gradient.jpg')",
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover",
-                  }}
-                >
-                  <div
-                    className=" absolute inset-0  -z-10 opacity-10 "
-                    style={{
-                      backgroundImage: "url('/grain.jpg')",
-                    }}
-                  ></div>
-                  <div className="pr-9">
-                    <h4 className="mb-6 text-6xl text-white tracking-tighter">
-                      Business Plan
-                    </h4>
-                    <p className="mb-2 text-xl text-white font-semibold tracking-tighter">
-                      From €195/mo
-                    </p>
-                    <p className="text-white tracking-tight">
-                      Perfect for medium-sized businesses needing more support
-                      and higher customer conversation volumes.
-                    </p>
-                  </div>
-                </div>
-                <div className="p-12 pb-11">
-                  <ul className="-m-1.5 mb-11">
-                  <FeatureItem>501 and 1000 minutes/month</FeatureItem>
-                  <FeatureItem>€0.90 per minute</FeatureItem>
-                  <FeatureItem>
-                    Full access to AI Voice Assistant features
-                  </FeatureItem>
-                  <FeatureItem>Priority Email Support</FeatureItem>
-                  </ul>
-                  <PricingButton noCardRequired={true}>
-                    Try 14 Days Free Trial
-                  </PricingButton>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/3 p-6">
-            <div className="flex flex-col justify-between relative z-10 h-full  bg-white/5 backdrop-blur-lg border border-neutral-600 rounded-2xl transform-gpu hover:-translate-y-2 transition duration-500">
-              <div
-                className=" absolute inset-0  -z-10 opacity-10 "
-                style={{
-                  backgroundImage: "url('/grain.jpg')",
-                }}
-              ></div>
-              <div className="p-12 border-neutral-300 dark:border-neutral-600">
-                <div className="pr-9">
-                  <h4 className="mb-6 text-6xl tracking-tighter">Custom</h4>
-                  <p className="mb-2 text-xl font-semibold tracking-tighter">
-                    Let&apos;s Talk
-                  </p>
-                  <p className="tracking-tight">
-                    We can customize a plan that suits the exact needs of your
-                    business.
-                  </p>
-                </div>
-              </div>
-              <div className="p-12 pb-11">
-                <PricingButton>Contact sales</PricingButton>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
   );
 }
-
-const FeatureItem = ({ children }: { children: string }) => {
-  return (
-    <li className="flex items-center py-1.5">
-      <CheckIcon className="size-3 mr-3" />
-      <span className="font-medium tracking-tight">{children}</span>
-    </li>
-  );
-};
-
-const PricingButton = ({
-  children,
-  href,
-
-  noCardRequired,
-}: {
-  children: string;
-  href?: string;
-  noCardRequired?: boolean;
-}) => {
-  return (
-    <>
-      <a
-        className="inline-block px-5 py-4 w-full text-center  font-semibold tracking-tight bg-transparent hover:bg-purple-500 hover:text-white border dark:hover:bg-white dark:hover:text-neutral-800 hover:scale-105 border-neutral-700 rounded-lg transition duration-200"
-        href={href ?? ""}
-      >
-        {children}
-      </a>
-    </>
-  );
-};

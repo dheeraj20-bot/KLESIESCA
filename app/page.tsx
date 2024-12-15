@@ -1,9 +1,10 @@
+import { BentoSection } from "@/components/bento-section";
 import { FeaturesSection } from "@/components/feature-section";
 import Footer from "@/components/footer";
 import Header from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import HowItWorks from "@/components/how-it-works";
-import Pricing from "@/components/Pricing";
+import {Pricing} from "@/components/Pricing";
 import Service from "@/components/service";
 import { WorldMapDemo } from "@/components/WorldMapSection";
 
@@ -15,7 +16,7 @@ export default function Home() {
       <FeaturesSection />
       <Service />
       <HowItWorks />
-      <WorldMapDemo />
+      <BentoSection/>
       <Pricing />
       <div className=" h-screen relative py-5 flex flex-col items-center overflow-hidden  justify-center max-w-5xl mx-auto px-3">
       <div className="absolute  -z-10 inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 via-black to-black opacity-50"></div>
