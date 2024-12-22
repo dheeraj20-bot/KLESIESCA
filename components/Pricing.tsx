@@ -169,7 +169,7 @@ export function Pricing() {
               >
                 <span className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform-gpu  opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-96 bg-violet-500" />
                 {(!isLoading || (isLoading && id !== price.id)) && (
-                  <p>Boek een gesprek</p>
+                  <p>Gratis Demo</p>
                 )}
 
                 {isLoading && id === price.id && <p>Loading...</p>}
