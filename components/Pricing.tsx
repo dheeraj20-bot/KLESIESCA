@@ -17,8 +17,8 @@ export function toHumanPrice(price: number, decimals: number = 2) {
 const demoPrices = [
   {
     id: "price_1",
-    name: "Starter",
-    description: "A basic plan for startups and individual users",
+    name: "Kickstart",
+    description: "Voor ondernemers die snel willen starten met automatisering zonder grote investering.",
     features: [
       "Kosten per minuut: €0,40",
       "Basis ondersteuning",
@@ -30,8 +30,8 @@ const demoPrices = [
   },
   {
     id: "price_2",
-    name: "Growth",
-    description: "A premium plan for growing businesses",
+    name: "Scale Up",
+    description: "Groei sneller en slimmer met meer lijnen en geavanceerde analyse.",
     features: [
       "Kosten per minuut: €0,25",
       "3 gelijktijdige lijnen",
@@ -44,9 +44,9 @@ const demoPrices = [
   },
   {
     id: "price_5",
-    name: "Business",
+    name: "Pro+",
     description:
-      "An enterprise plan with advanced features for large organizations",
+      "Volledige controle en schaalbaarheid voor bedrijven die écht willen opschalen",
     features: [
       "Kosten per minuut: €0,20",
       "10 gelijktijdige lijnen",
@@ -60,8 +60,8 @@ const demoPrices = [
   },
   {
     id: "price_6",
-    name: "Enterprise",
-    description: "The ultimate plan with all features for industry leaders",
+    name: "Ultimate",
+    description: "Op maat gemaakte oplossingen voor grootschalige bedrijven met specifieke wensen.",
     features: [
       "Maatwerkoplossingen voor grootschalige bedrijven",
       "Geavanceerde beveiliging en compliance",
