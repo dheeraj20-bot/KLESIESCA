@@ -23,7 +23,7 @@ export default function Home() {
       <div className="absolute  -z-10 inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 via-black to-black opacity-50"></div>
 
         <h2 className="text-4xl md:text-6xl text-white font-semibold mb-8">
-          Book a Call <span className="text-purple-500">Now</span>
+        Boek nu een  <span className="text-purple-500">Call</span>
         </h2>
         <iframe
           src="https://api.leadconnectorhq.com/widget/booking/uZDr1RQLbK7hlir0bcy6"
