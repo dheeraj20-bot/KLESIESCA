@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-4">
             <h3 className="text-2xl font-bold">Klesiescall</h3>
-            <p className="text-gray-400 max-w-xl">Innovating the future of customer service through AI-powered solutions.</p>
+            <p className="text-gray-400 max-w-xl">Geef je bedrijf een boost met de kracht van AI—moeiteloze automatisering, eindeloze groei.</p>
           </div>
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Contact Us</h4>

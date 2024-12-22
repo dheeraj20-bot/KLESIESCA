@@ -20,7 +20,10 @@ export default function HowItWorks() {
                 Aangepast Systeem
               </h3>
               <p className="text-zinc-300 leading-relaxed">
-                We ontwerpen en bouwen uw AI-gestuurde beloplossing om aan uw
+                Wij ontwerpen en bouwen jouw AI-gestuurde voice assistent
+                volledig op maat, afgestemd op jouw bedrijf, merkidentiteit en
+                specifieke doelen. Geen standaardoplossingen—alles is ontworpen
+                om jouw unieke behoeften te ondersteunenoplossing om aan uw
                 specifieke behoeften en wensen te voldoen.
               </p>
             </CardContent>
@@ -35,8 +38,10 @@ export default function HowItWorks() {
                 Naadloze Integratie
               </h3>
               <p className="text-zinc-300 leading-relaxed">
-                Ons systeem integreert soepel met uw bestaande tools en
-                processen, zodat uw bedrijf minimaal wordt verstoord.
+                Onze oplossing integreert direct met jouw bestaande systemen
+                zoals CRM-tools, kalenders en communicatieplatformen. Dit zorgt
+                ervoor dat jouw workflows ongestoord blijven terwijl de AI
+                direct aan de slag kan.
               </p>
             </CardContent>
           </Card>
@@ -47,11 +52,13 @@ export default function HowItWorks() {
                 <SmilePlus className="w-6 h-6 text-purple-400" />
               </div>
               <h3 className="text-2xl font-semibold text-white">
-                Tevreden Conversies
+                Eerste Resultaten
               </h3>
               <p className="text-zinc-300 leading-relaxed">
-                Begin met het ervaren van slimmere gesprekken, betere
-                leadkwalificatie en hogere conversieratio's—moeiteloos.
+                Vanaf dag één begint onze Voice Assistent waarde toe te voegen.
+                Ervaar direct snellere opvolgingen, betere klantgesprekken en
+                een gestroomlijnde planning die jouw team tijd bespaart en jouw
+                omzet verhoogt.
               </p>
             </CardContent>
           </Card>
@@ -61,12 +68,13 @@ export default function HowItWorks() {
                 <TreePalm className="w-6 h-6 text-purple-400" />
               </div>
               <h3 className="text-2xl font-semibold text-white">
-              Optimaliseren en Groeien
+                Optimaliseren en Schalen
               </h3>
               <p className="text-zinc-300 leading-relaxed">
-              Na de lancering blijft onze AI leren en zich aanpassen.
-              Je krijgt toegang tot waardevolle data en inzichten waarmee
-              je je strategie kunt optimaliseren en je bedrijf verder kunt laten groeien.
+                Na de implementatie blijft onze AI leren en zich aanpassen aan
+                jouw klanten en processen. Met waardevolle inzichten en data kun
+                je jouw strategie continu optimaliseren en je bedrijf verder
+                laten groeien—efficiënt en schaalbaar
               </p>
             </CardContent>
           </Card>

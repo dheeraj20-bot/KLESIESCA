@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-export function SpotlightButton({ text = "Boek een gesprek" }) {
+export function SpotlightButton({ text = "Gratis Demo" }) {
   return (
     <Link className="mb-7" href="https://api.leadconnectorhq.com/widget/booking/uZDr1RQLbK7hlir0bcy6" target="blank" style={{ transform: "none" }}>
       <button className="group relative inline-block cursor-pointer rounded-xl bg-neutral-900 p-px font-semibold leading-6 text-white no-underline shadow-2xl shadow-zinc-900">

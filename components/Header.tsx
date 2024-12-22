@@ -12,7 +12,7 @@ export default function Header() {
         
         </Link>
         <Link href="https://api.leadconnectorhq.com/widget/booking/uZDr1RQLbK7hlir0bcy6" target="blank">
-          <Button className="text-white bg-purple-500">Book Now</Button>
+          <Button className="text-white bg-purple-500">Gratis Demo</Button>
         </Link>
       </div>
     </header>
