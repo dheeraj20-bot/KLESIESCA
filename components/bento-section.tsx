@@ -4,9 +4,7 @@ import { BentoCard } from "./Bentogrid";
 import { Keyboard } from "./ui/keyboard";
 import { LogoCluster } from "./ui/logocluster";
 import { Map } from "./ui/map";
-// import { BentoCard } from "@/components/bentocard";
-// import { LogoCluster } from "@/components/eldoraui/logocluster";
-// import { Map } from "@/components/eldoraui/map";
+
 
 export function BentoSection() {
   return (
@@ -19,7 +17,9 @@ export function BentoSection() {
         "Krijg volledige duidelijkheid na elk gesprek met geautomatiseerde opnames, samenvattingen en belangrijke inzichten. Begrijp gesprekken beter, stroomlijn follow-ups en bespaar uren aan handmatige aantekeningen."
         graphic={
           // eslint-disable-next-line tailwindcss/no-contradicting-classname
-          <div className="h-80 bg-[url(https://res.cloudinary.com/dr4majoko/image/upload/v1734272595/zfsh0ltle8zjrjnkcvo8.jpg)] bg-[size:1000px_560px] bg-[left_-40px_top_-12px] bg-no-repeat" />
+          <div 
+           
+          className={`h-80 bg-[url("/b2.png")]  bg-[size:1100px_650px] bg-[left_-38px_top_-73px] bg-no-repeat`} />
         }
         fade={["bottom"]}
         className="max-lg:rounded-t-4xl inset-0 bg-gradient-to-t to-35%  transition-colors duration-200 from-teal-500/20 lg:rounded-tl-4xl lg:col-span-3"
@@ -31,7 +31,8 @@ export function BentoSection() {
         "Beheer je gegevens moeiteloos met geavanceerde filters, gedetailleerde rapporten en uitgebreide analyses. Stroomlijn workflows, monitor prestaties en neem onderbouwde beslissingen—alléén vanuit één centrale plek."
         graphic={
           // eslint-disable-next-line tailwindcss/no-contradicting-classname
-          <div className="absolute to-35%  transition-colors duration-200 from-teal-500/20  inset-0 bg-[url(https://res.cloudinary.com/dr4majoko/image/upload/v1734272592/co7gvjyaeit7ei6ddinc.jpg)] bg-[size:1100px_650px] bg-[left_-38px_top_-73px] bg-no-repeat" />
+          <div className={`absolute to-35%  transition-colors duration-200 from-teal-500/20 
+           inset-0 bg-[url("/b1.png")]  bg-[size:1100px_650px] bg-[left_-38px_top_-73px] bg-no-repeat`} />
         }
         fade={["bottom"]}
         className="lg:rounded-tr-4xl inset-0 bg-gradient-to-t to-35%  transition-colors duration-200 from-violet-500/20 lg:col-span-3 "
